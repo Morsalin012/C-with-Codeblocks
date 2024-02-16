@@ -9,6 +9,7 @@ int main(){
     min2=a[1];
     for(i=2; i<n; i++){
         if(a[i]<min1){
+            min2= min1;
             min1=a[i];
         }
         else if(a[i]>min1 && a[i]<min2){

@@ -9,9 +9,10 @@ int main(){
     large2=a[1];
     for(i=2; i<n; i++){
         if(a[i]>large1){
+            large2= large1;
             large1=a[i];
         }
-        else if(a[i]<large1 && a[i]>large2){
+        else if(a[i] != large1 && a[i]>large2){
             large2=a[i];
         }
     }
